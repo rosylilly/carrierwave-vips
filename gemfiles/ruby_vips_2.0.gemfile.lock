@@ -8,7 +8,7 @@ GIT
       mime-types (>= 1.16)
 
 PATH
-  remote: .
+  remote: ..
   specs:
     carrierwave-vips (1.1.3)
       carrierwave (>= 0.11.0)
@@ -75,7 +75,7 @@ DEPENDENCIES
   carrierwave-vips!
   mini_magick
   rspec (~> 3.5.0)
-  ruby-vips
+  ruby-vips (~> 2.0)
   sqlite3
 
 BUNDLED WITH

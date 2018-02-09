@@ -68,8 +68,14 @@ module CarrierWave
           else
             raise('Invalid value for Orientation: ' + o.to_s)
         end
-        image.set('exif-Orientation', '')
-        image.set('exif-ifd0-Orientation', '')
+
+        if image.respond_to?(:set_type)
+          image.set_type(GObject::GSTR_TYPE, 'exif-Orientation', '')
+          image.set_type(GObject::GSTR_TYPE, 'exif-ifd0-Orientation', '')
+        else
+          image.set('exif-Orientation', '')
+          image.set('exif-ifd0-Orientation', '')
+        end
       end
     end
 

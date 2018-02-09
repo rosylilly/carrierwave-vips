@@ -38,9 +38,9 @@ end
 
 
 describe CarrierWave::Vips do
-  
+
   let(:instance) { create_instance }
-  
+
   after do
     Dir[file_path('*.copy.jpg')].each do |file|
       FileUtils.rm(file)
@@ -61,11 +61,11 @@ describe CarrierWave::Vips do
     it 'throws an error on gif' do
       expect { instance.convert('gif') }.to raise_error(ArgumentError)
     end
-    
+
   end
 
   describe '#resize_to_fill' do
-    
+
     it 'resizes the image to exactly the given dimensions' do
       instance.resize_to_fill(200,200)
       instance.process!
@@ -93,7 +93,7 @@ describe CarrierWave::Vips do
   end
 
   describe '#resize_to_fit' do
-    
+
     it 'resizes the image to fit within the given dimensions' do
       instance.resize_to_fit(200, 200)
       instance.process!
@@ -105,11 +105,11 @@ describe CarrierWave::Vips do
       instance.process!
       expect(instance).to have_dimensions(1000, 750)
     end
-    
+
   end
 
   describe '#resize_to_limit' do
-    
+
     it 'resizes the image to fit within the given dimensions' do
       instance.resize_to_limit(200, 200)
       instance.process!
