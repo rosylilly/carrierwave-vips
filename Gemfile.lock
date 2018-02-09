@@ -69,10 +69,10 @@ DEPENDENCIES
   activerecord (~> 5.0.0)
   carrierwave!
   carrierwave-vips!
-  rmagick
+  mini_magick
   rspec (~> 3.5.0)
   ruby-vips
   sqlite3
 
 BUNDLED WITH
-   1.12.5
+   1.16.1

@@ -7,6 +7,7 @@ require 'tempfile'
 require 'time'
 require 'logger'
 
+require 'mini_magick'
 require 'active_record'
 require 'carrierwave'
 require 'carrierwave/orm/activerecord'

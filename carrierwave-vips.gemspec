@@ -11,6 +11,6 @@ Gem::Specification.new do |s|
 
   s.add_runtime_dependency 'ruby-vips', '~> 1.0', '>= 1.0.2'
   s.add_runtime_dependency 'carrierwave', '>= 0.11.0'
-  s.add_development_dependency 'rmagick'
+  s.add_development_dependency 'mini_magick'
 
 end
