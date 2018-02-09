@@ -8,3 +8,4 @@ spec/test.log
 .rvmrc
 .bundle
 *.gem
+gemfiles/*.lock
