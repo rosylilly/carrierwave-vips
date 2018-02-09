@@ -35,6 +35,7 @@ addons:
         # - libwebpmux2
       - libfftw3-dev
       - libglib2.0-dev
+      - libgirepository1.0-dev
 
 cache:
   directories:
